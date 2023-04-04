@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 
 config = dotenv_values(".env")
+print(datetime.now())
 
 # configure web map symbology to show changes to status field
 def update(repairs, monitoring):
