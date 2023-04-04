@@ -2,9 +2,11 @@ from arcgis import GIS
 from dotenv import dotenv_values
 from datetime import datetime, timedelta
 
+import os
 import pandas as pd
 
-config = dotenv_values(".env")
+PATH = os.path.dirname(__file__)
+config = dotenv_values(os.path.join(PATH,".env"))
 print(datetime.now())
 
 # configure web map symbology to show changes to status field
